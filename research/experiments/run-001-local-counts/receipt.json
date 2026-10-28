@@ -1,0 +1,22 @@
+{
+  "artifact_hashes": {
+    "compute.py": "33b06374ea34a31f07ab5b860d5f3bb0f745e4eedf031b53582c3c75ccf47b63",
+    "input.json": "ecdf1b42b22b5e1b8399996df0b0e68cffebb9f256fd65a7752cb8841ec5aef2",
+    "output.json": "dc6176361b30139372d6cd25fc5b8f5c49ed9908e56973d58cea3ad528beff2f"
+  },
+  "assurance": "self reported execution receipt; not an independent verifier",
+  "command": "python3 research/experiments/run-001-local-counts/compute.py",
+  "comparison_rows": 40,
+  "elapsed_seconds": 0.020653041999999996,
+  "exact_integer_arithmetic": true,
+  "exit_status": 0,
+  "experiment": "run-001-local-counts",
+  "finished_utc": "2026-10-28T20:57:04.391044+00:00",
+  "hash_algorithm": "SHA256",
+  "method_discrepancies": 0,
+  "python_implementation": "CPython",
+  "python_version": "3.9.6",
+  "randomness_used": false,
+  "standard_library_only": true,
+  "started_utc": "2026-10-28T20:57:04.370281+00:00"
+}

@@ -1,0 +1,15 @@
+{
+  "experiment": "run-001-local-counts",
+  "base_field": "Q",
+  "coefficient_order": ["a1", "a2", "a3", "a4", "a6"],
+  "curves": [
+    {"input_alias": "11a1", "coefficients": [0, -1, 1, -10, -20]},
+    {"input_alias": "37a1", "coefficients": [0, 0, 1, -1, 0]},
+    {"input_alias": "389a1", "coefficients": [0, 1, 1, -2, 0]}
+  ],
+  "maximum_auxiliary_prime": 43,
+  "representation_prime": 5,
+  "witness_curve_input_alias": "37a1",
+  "random_seed": null,
+  "arithmetic": "exact Python integers"
+}

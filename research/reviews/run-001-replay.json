@@ -1,0 +1,656 @@
+{
+  "author_receipt_hashes_match": true,
+  "command": "python3 research/reviews/run-001-replay.py",
+  "count_discrepancies": 0,
+  "count_rows_checked": 40,
+  "elapsed_seconds": 0.010810208000000002,
+  "exit_status": 0,
+  "finished_utc": "2026-10-28T21:01:00.552569+00:00",
+  "floating_point_arithmetic_for_math": false,
+  "invariants": [
+    {
+      "Delta": -161051,
+      "c4": 496,
+      "c6": 20008,
+      "coefficients": [
+        0,
+        -1,
+        1,
+        -10,
+        -20
+      ]
+    },
+    {
+      "Delta": 37,
+      "c4": 48,
+      "c6": -216,
+      "coefficients": [
+        0,
+        0,
+        1,
+        -1,
+        0
+      ]
+    },
+    {
+      "Delta": 389,
+      "c4": 112,
+      "c6": -856,
+      "coefficients": [
+        0,
+        1,
+        1,
+        -2,
+        0
+      ]
+    }
+  ],
+  "irreducible_frobenius_polynomial_primes": [
+    3,
+    7,
+    13,
+    17,
+    23,
+    31,
+    41,
+    43
+  ],
+  "method": "independently written first nonzero coordinate projective enumeration; rational short model invariants; exact rational group law",
+  "negative_twist_probe": {
+    "affine_points": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ]
+    ],
+    "d": -1,
+    "projective_count": 3,
+    "q": 3
+  },
+  "not_established": [
+    "analytic rank",
+    "BSD",
+    "formal proof",
+    "qualified external human review",
+    "trusted service attestation"
+  ],
+  "pilot_multiples": [
+    {
+      "n": 1,
+      "point": [
+        "5",
+        "5"
+      ]
+    },
+    {
+      "n": 2,
+      "point": [
+        "16",
+        "-61"
+      ]
+    },
+    {
+      "n": 3,
+      "point": [
+        "16",
+        "60"
+      ]
+    },
+    {
+      "n": 4,
+      "point": [
+        "5",
+        "-6"
+      ]
+    },
+    {
+      "n": 5,
+      "point": null
+    }
+  ],
+  "python_implementation": "CPython",
+  "python_version": "3.9.6",
+  "randomness_used": false,
+  "replay_script_sha256": "ef7b3d93dc45f61a341271fad19bdd327c9204633e2078dfc6bffde5f1ea22ef",
+  "reviewed_artifact_sha256": {
+    "research/experiments/run-001-local-counts/README.md": "b2bcf7a769384058ac4c7a0f696f8a85400854573b4ebf13e530789a9af921ca",
+    "research/experiments/run-001-local-counts/compute.py": "33b06374ea34a31f07ab5b860d5f3bb0f745e4eedf031b53582c3c75ccf47b63",
+    "research/experiments/run-001-local-counts/input.json": "ecdf1b42b22b5e1b8399996df0b0e68cffebb9f256fd65a7752cb8841ec5aef2",
+    "research/experiments/run-001-local-counts/output.json": "dc6176361b30139372d6cd25fc5b8f5c49ed9908e56973d58cea3ad528beff2f",
+    "research/experiments/run-001-local-counts/receipt.json": "b85fc4ec3e4e1f8abd8b9d0e4b0af734f514203f73304ce083d25f743dda1367",
+    "research/findings/run-001-representation-obstruction.md": "cfef65411425b63a59c51a782090241fa8e7a8f1c3b6688fcd75cbfcbfd86f3b",
+    "research/sources/run-001-jsw-audit.md": "4561bf87427c86859a925043460a0866e389ec8afa8ad8fa3da7ef06e4f46366",
+    "research/sources/run-001-representation-bridges.md": "3407e24dfac88fe0173643d3eb41c5b3b1e57f762a128e44b44d394db4a4ca3d"
+  },
+  "reviewed_artifacts_unchanged_during_replay": true,
+  "rows": [
+    {
+      "a_q": -2,
+      "coefficients": [
+        0,
+        -1,
+        1,
+        -10,
+        -20
+      ],
+      "projective_points": 5,
+      "q": 2
+    },
+    {
+      "a_q": -1,
+      "coefficients": [
+        0,
+        -1,
+        1,
+        -10,
+        -20
+      ],
+      "projective_points": 5,
+      "q": 3
+    },
+    {
+      "a_q": 1,
+      "coefficients": [
+        0,
+        -1,
+        1,
+        -10,
+        -20
+      ],
+      "projective_points": 5,
+      "q": 5
+    },
+    {
+      "a_q": -2,
+      "coefficients": [
+        0,
+        -1,
+        1,
+        -10,
+        -20
+      ],
+      "projective_points": 10,
+      "q": 7
+    },
+    {
+      "a_q": 4,
+      "coefficients": [
+        0,
+        -1,
+        1,
+        -10,
+        -20
+      ],
+      "projective_points": 10,
+      "q": 13
+    },
+    {
+      "a_q": -2,
+      "coefficients": [
+        0,
+        -1,
+        1,
+        -10,
+        -20
+      ],
+      "projective_points": 20,
+      "q": 17
+    },
+    {
+      "a_q": 0,
+      "coefficients": [
+        0,
+        -1,
+        1,
+        -10,
+        -20
+      ],
+      "projective_points": 20,
+      "q": 19
+    },
+    {
+      "a_q": -1,
+      "coefficients": [
+        0,
+        -1,
+        1,
+        -10,
+        -20
+      ],
+      "projective_points": 25,
+      "q": 23
+    },
+    {
+      "a_q": 0,
+      "coefficients": [
+        0,
+        -1,
+        1,
+        -10,
+        -20
+      ],
+      "projective_points": 30,
+      "q": 29
+    },
+    {
+      "a_q": 7,
+      "coefficients": [
+        0,
+        -1,
+        1,
+        -10,
+        -20
+      ],
+      "projective_points": 25,
+      "q": 31
+    },
+    {
+      "a_q": 3,
+      "coefficients": [
+        0,
+        -1,
+        1,
+        -10,
+        -20
+      ],
+      "projective_points": 35,
+      "q": 37
+    },
+    {
+      "a_q": -8,
+      "coefficients": [
+        0,
+        -1,
+        1,
+        -10,
+        -20
+      ],
+      "projective_points": 50,
+      "q": 41
+    },
+    {
+      "a_q": -6,
+      "coefficients": [
+        0,
+        -1,
+        1,
+        -10,
+        -20
+      ],
+      "projective_points": 50,
+      "q": 43
+    },
+    {
+      "a_q": -2,
+      "coefficients": [
+        0,
+        0,
+        1,
+        -1,
+        0
+      ],
+      "projective_points": 5,
+      "q": 2
+    },
+    {
+      "a_q": -3,
+      "coefficients": [
+        0,
+        0,
+        1,
+        -1,
+        0
+      ],
+      "projective_points": 7,
+      "q": 3
+    },
+    {
+      "a_q": -2,
+      "coefficients": [
+        0,
+        0,
+        1,
+        -1,
+        0
+      ],
+      "projective_points": 8,
+      "q": 5
+    },
+    {
+      "a_q": -1,
+      "coefficients": [
+        0,
+        0,
+        1,
+        -1,
+        0
+      ],
+      "projective_points": 9,
+      "q": 7
+    },
+    {
+      "a_q": -5,
+      "coefficients": [
+        0,
+        0,
+        1,
+        -1,
+        0
+      ],
+      "projective_points": 17,
+      "q": 11
+    },
+    {
+      "a_q": -2,
+      "coefficients": [
+        0,
+        0,
+        1,
+        -1,
+        0
+      ],
+      "projective_points": 16,
+      "q": 13
+    },
+    {
+      "a_q": 0,
+      "coefficients": [
+        0,
+        0,
+        1,
+        -1,
+        0
+      ],
+      "projective_points": 18,
+      "q": 17
+    },
+    {
+      "a_q": 0,
+      "coefficients": [
+        0,
+        0,
+        1,
+        -1,
+        0
+      ],
+      "projective_points": 20,
+      "q": 19
+    },
+    {
+      "a_q": 2,
+      "coefficients": [
+        0,
+        0,
+        1,
+        -1,
+        0
+      ],
+      "projective_points": 22,
+      "q": 23
+    },
+    {
+      "a_q": 6,
+      "coefficients": [
+        0,
+        0,
+        1,
+        -1,
+        0
+      ],
+      "projective_points": 24,
+      "q": 29
+    },
+    {
+      "a_q": -4,
+      "coefficients": [
+        0,
+        0,
+        1,
+        -1,
+        0
+      ],
+      "projective_points": 36,
+      "q": 31
+    },
+    {
+      "a_q": -9,
+      "coefficients": [
+        0,
+        0,
+        1,
+        -1,
+        0
+      ],
+      "projective_points": 51,
+      "q": 41
+    },
+    {
+      "a_q": 2,
+      "coefficients": [
+        0,
+        0,
+        1,
+        -1,
+        0
+      ],
+      "projective_points": 42,
+      "q": 43
+    },
+    {
+      "a_q": -2,
+      "coefficients": [
+        0,
+        1,
+        1,
+        -2,
+        0
+      ],
+      "projective_points": 5,
+      "q": 2
+    },
+    {
+      "a_q": -2,
+      "coefficients": [
+        0,
+        1,
+        1,
+        -2,
+        0
+      ],
+      "projective_points": 6,
+      "q": 3
+    },
+    {
+      "a_q": -3,
+      "coefficients": [
+        0,
+        1,
+        1,
+        -2,
+        0
+      ],
+      "projective_points": 9,
+      "q": 5
+    },
+    {
+      "a_q": -5,
+      "coefficients": [
+        0,
+        1,
+        1,
+        -2,
+        0
+      ],
+      "projective_points": 13,
+      "q": 7
+    },
+    {
+      "a_q": -4,
+      "coefficients": [
+        0,
+        1,
+        1,
+        -2,
+        0
+      ],
+      "projective_points": 16,
+      "q": 11
+    },
+    {
+      "a_q": -3,
+      "coefficients": [
+        0,
+        1,
+        1,
+        -2,
+        0
+      ],
+      "projective_points": 17,
+      "q": 13
+    },
+    {
+      "a_q": -6,
+      "coefficients": [
+        0,
+        1,
+        1,
+        -2,
+        0
+      ],
+      "projective_points": 24,
+      "q": 17
+    },
+    {
+      "a_q": 5,
+      "coefficients": [
+        0,
+        1,
+        1,
+        -2,
+        0
+      ],
+      "projective_points": 15,
+      "q": 19
+    },
+    {
+      "a_q": -4,
+      "coefficients": [
+        0,
+        1,
+        1,
+        -2,
+        0
+      ],
+      "projective_points": 28,
+      "q": 23
+    },
+    {
+      "a_q": -6,
+      "coefficients": [
+        0,
+        1,
+        1,
+        -2,
+        0
+      ],
+      "projective_points": 36,
+      "q": 29
+    },
+    {
+      "a_q": 4,
+      "coefficients": [
+        0,
+        1,
+        1,
+        -2,
+        0
+      ],
+      "projective_points": 28,
+      "q": 31
+    },
+    {
+      "a_q": -8,
+      "coefficients": [
+        0,
+        1,
+        1,
+        -2,
+        0
+      ],
+      "projective_points": 46,
+      "q": 37
+    },
+    {
+      "a_q": -3,
+      "coefficients": [
+        0,
+        1,
+        1,
+        -2,
+        0
+      ],
+      "projective_points": 45,
+      "q": 41
+    },
+    {
+      "a_q": 12,
+      "coefficients": [
+        0,
+        1,
+        1,
+        -2,
+        0
+      ],
+      "projective_points": 32,
+      "q": 43
+    }
+  ],
+  "shared_dependencies": [
+    "same supplied coefficients",
+    "same mathematical identities",
+    "Python interpreter family",
+    "shared filesystem and source evidence"
+  ],
+  "singular_rows": [
+    {
+      "coefficients": [
+        0,
+        -1,
+        1,
+        -10,
+        -20
+      ],
+      "q": 11,
+      "singular_points_first_coordinate_normalization": [
+        [
+          1,
+          1,
+          9
+        ]
+      ]
+    },
+    {
+      "coefficients": [
+        0,
+        0,
+        1,
+        -1,
+        0
+      ],
+      "q": 37,
+      "singular_points_first_coordinate_normalization": [
+        [
+          1,
+          11,
+          15
+        ]
+      ]
+    }
+  ],
+  "started_utc": "2026-10-28T21:01:00.541615+00:00",
+  "status": "exact finite replay passed; separate model review, not formal verification"
+}
