@@ -1,0 +1,21 @@
+{
+  "version": "3",
+  "date": "2026-10-28",
+  "scope": "publicDesignBaseline",
+  "researchDirection": "Birch and Swinnerton Dyer over Q",
+  "architecture": "sixAccountProposal",
+  "humanDirector": null,
+  "proposed": [
+    "fullBSDCompletionScope",
+    "formalCompleteDefaultAssurance",
+    "runtimeArchitecture",
+    "lifecycleThresholds",
+    "budgetStages",
+    "sixSlotRoleMapping",
+    "nativeManagedAuthStdioTransport",
+    "includedOnlyFundingBoundary"
+  ],
+  "architectureAcceptance": null,
+  "authority": "Current human instructions and local campaign decisions; a checked in template grants no execution authority",
+  "privateOperatorDecisionsIncluded": false
+}

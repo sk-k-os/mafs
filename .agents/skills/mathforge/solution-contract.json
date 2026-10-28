@@ -1,0 +1,64 @@
+{
+  "version": "1",
+  "status": "proposedNotImplemented",
+  "target": "Full Birch and Swinnerton Dyer over Q",
+  "quantifier": "every elliptic curve over Q",
+  "obligations": [
+    "rankEquality",
+    "shaFiniteness",
+    "leadingCoefficientFormula"
+  ],
+  "selectedProblemConfirmed": true,
+  "strongTargetScope": "conservativeProposal",
+  "humanDirector": null,
+  "defaultAssuranceProfile": "formalComplete",
+  "permittedProfiles": [
+    "formalComplete",
+    "expertProof"
+  ],
+  "profileChangeRequiresExplicitDecision": true,
+  "currentState": "designOnly",
+  "candidateBundle": null,
+  "resolution": null,
+  "requiredAcceptanceChecks": [
+    "declaredResolutionAndExactScope",
+    "definitionsAndQuantifiersReviewed",
+    "noOpenConjecturalPremises",
+    "acyclicProofDependencies",
+    "allRequiredReceiptsCurrent",
+    "twoAuthenticatedExternalHumanMathematicianReviews",
+    "relevantBSDExpertise",
+    "noUnresolvedMaterialObjections",
+    "reproducibleEvidenceBundle",
+    "selectedAssuranceProfileSatisfied",
+    "directorEvidenceAcceptance"
+  ],
+  "resolutionSpecificChecks": {
+    "proved": [
+      "allThreeUniversalObligationsDischarged",
+      "noExcludedCurvesOrRelevantPrimes"
+    ],
+    "disproved": [
+      "exactWitness",
+      "originalHypothesesEstablished",
+      "namedObligationRigorouslyRefuted",
+      "unaffectedComponentStatusesPreserved",
+      "negativeResolutionDisplayedExplicitly"
+    ]
+  },
+  "formalCompleteAdditionalChecks": [
+    "fullFormalCoverage",
+    "trustedChallengeMatch",
+    "approvedAxiomClosure",
+    "trustedProofReplay",
+    "independentStatementMeaningReview"
+  ],
+  "expertProofAdditionalChecks": [
+    "completeHumanReconstructionReports",
+    "certifiedComputationalIngredients",
+    "formalCoverageDisclosed"
+  ],
+  "externalRecognitionSeparate": true,
+  "publicationAuthorized": false,
+  "solutionAccepted": false
+}

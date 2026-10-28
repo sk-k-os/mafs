@@ -1,0 +1,4 @@
+interface:
+  display_name: "Mathforge"
+  short_description: "Mathematical research teams with rigorous evidence"
+  default_prompt: "Use $mathforge to inspect the current research campaign and carry out the next bounded assignment with independent verification."
