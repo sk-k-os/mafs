@@ -1,0 +1,58 @@
+{
+  "L_prime_enclosure_conditional_on_recorded_analytic_bridges": {
+    "strict_lower": "73/2240",
+    "strict_upper": "69/80"
+  },
+  "a_two": -2,
+  "affine_points_mod_two": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      1
+    ]
+  ],
+  "arithmetic": "Python integers and fractions.Fraction only",
+  "curve_coefficients": [
+    0,
+    0,
+    1,
+    -1,
+    0
+  ],
+  "excluded_scope": [
+    "modularity theorem verification",
+    "conductor and root number derivation",
+    "Hasse theorem verification",
+    "formal checking of analytic inequalities",
+    "BSD beyond this analytic rank premise"
+  ],
+  "exp_eleven_tenths_upper": "1161/380",
+  "exp_one_lower_partial": "65/24",
+  "main_term_strict_lower": "1/7",
+  "pi_lower_comparison": "pi > 31/10",
+  "pi_lower_partial": "300524544618003693032/96845140757687397075",
+  "pi_lower_partial_terms": 26,
+  "pi_upper_comparison": "pi < 33/10",
+  "pi_upper_partial": "147916/45045",
+  "pi_upper_partial_terms": 7,
+  "point_count_mod_two": 5,
+  "randomness": "none",
+  "remainder_absolute_strict_upper": "9/160",
+  "second_term_strict_upper": "9/128",
+  "status": "finite rational checks passed",
+  "x_bounds": {
+    "strict_lower": "1/1",
+    "strict_upper": "11/10"
+  }
+}

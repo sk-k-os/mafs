@@ -1,6 +1,6 @@
 # Current research state
 
-Updated October 28, 2026. Latest completed session: [first live calibration run](sessions/2026-10-28-run-001.md). Prior infrastructure work: [research persistence setup](sessions/2026-10-28-git-checkpoints.md). Initial context: [bootstrap session](sessions/2026-10-28-bootstrap.md).
+Updated October 28, 2026. Active session: [exact analytic rank of the control](sessions/2026-10-28-run-002.md). Latest completed session: [first live calibration run](sessions/2026-10-28-run-001.md). Prior infrastructure work: [research persistence setup](sessions/2026-10-28-git-checkpoints.md). Initial context: [bootstrap session](sessions/2026-10-28-bootstrap.md).
 
 **Target:** full Birch and Swinnerton Dyer over the rational numbers. Track universal rank equality, finiteness of the Tate Shafarevich group and the leading coefficient formula as separate obligations. See the [exact solution contract](../.agents/skills/mathforge/references/solution-contract.md).
 
@@ -11,6 +11,8 @@ Updated October 28, 2026. Latest completed session: [first live calibration run]
 **Next runtime milestone:** one qualified worker completes a bounded assignment through a durable coordinator, with attributable evidence visible in a live HUD and successful restart recovery. Qualify that path before expanding to six execution slots. Follow the [implementation manual](../.agents/skills/mathforge/references/build-manual.md) and [account architecture](../.agents/skills/mathforge/references/six-account-architecture.md).
 
 **Next research assignment:** certify analytic rank exactly one for the precise control `[0,0,1,-1,0]`. Supply either an exact sourced theorem with hypotheses verified, or a proof of central vanishing plus a rigorous nonzero enclosure for the first derivative, including the modular identification and error bounds. The [JSW audit](sources/run-001-jsw-audit.md) fixes every other hypothesis for its application at 5. Until the analytic premise is supplied, that application remains conditional. Do not substitute a database rank or numerical zero.
+
+**Run 002 progress:** the completed run 001 manifest and its 14 artifact hashes were verified against the saved files; the baseline commit was confirmed on origin. Three specialist agents are developing and separately reviewing an exact certificate. The [local root number note](sources/run-002-root-number.md) and primary source audit support the central vanishing route. A rational derivative enclosure is being prepared using only two exact coefficients and a universal tail bound. The new analytic premise remains under review; this progress record does not close it.
 
 **Direction and open work:** the human director chooses meaningful research branches. Share useful results, objections and failed routes across teams. The immediate missing input is the control's certified analytic rank. The pilot's entire quadratic twist family fails the selected theorem's irreducibility requirement at 5; a change of prime still requires checking semistability and every other hypothesis. Complete the control calibration before selecting a substantive frontier branch. Broader mathematical tool qualification, protected worker benchmarks and six account capacity remain unestablished.
 
