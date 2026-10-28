@@ -1,6 +1,6 @@
 # Public research record
 
-Read [STATE.md](STATE.md) first, then the latest [session](sessions/2026-10-28-bootstrap.md). This directory preserves useful findings, failed approaches, evidence and enough context to resume work. It is public. Keep credentials, account identities, private operator details, private paths and raw conversations outside it.
+Read [STATE.md](STATE.md) first, then the latest session linked there. This directory preserves useful findings, failed approaches, evidence and enough context to resume work. It is public. Keep credentials, account identities, private operator details, private paths and raw conversations outside it.
 
 ## What to record
 
