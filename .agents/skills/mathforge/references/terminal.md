@@ -8,6 +8,7 @@ From the repository root, use the checkout's launcher:
 ./bin/mathforge research 'Complete one source backed theorem applicability audit for the BSD pilot'
 ./bin/mathforge review 'Review a specific candidate against its exact statement'
 ./bin/mathforge resume
+./bin/mathforge checkpoint 'Preserve findings and next steps'
 ./bin/mathforge hud
 ```
 
@@ -15,9 +16,11 @@ Inside Codex CLI, select Mathforge with `/skills` or use `$mathforge`. Repositor
 
 `bin/mathforge` resolves to `.agents/skills/mathforge/scripts/mathforge`. It reads this checkout's skill directly, even if a user also has an older global Mathforge installation. It preserves model, authentication, sandbox and approval settings. An explicit invalid `MATHFORGE_CODEX` path fails instead of selecting another executable.
 
-Python 3.10 or later and Codex CLI are prerequisites. `--check` inspects files, executable paths and CLI version only. It does not authenticate an account or measure mathematical competence, billing or capacity. `--print-launch` displays the command as data without starting a model.
+Python 3.10 or later and Codex CLI are prerequisites for interactive sessions. The checkpoint helper uses Git and Python on macOS or Linux without invoking Codex. `--check` inspects files, executable paths, CLI version and the presence of a sync policy only. It does not authenticate an account or measure mathematical competence, billing or capacity. `--print-launch` displays the command as data without starting a model or publishing records.
 
 Use `-C /absolute/path/to/workspace` before the mode to select another existing workspace. Task text is passed as one process argument and is never evaluated as shell code.
+
+When this package lives in a repository with `research-sync.json`, its launcher defaults to that repository even when invoked from another directory. Otherwise it defaults to the current directory. A successful research, review or resume session automatically attempts a Git checkpoint if the selected workspace has a sync policy. Design sessions do not automatically publish. Read [research records](research-records.md) for milestone checkpoints, recovery and publication boundaries.
 
 The HUD command prints a path for manual inspection. The preview is synthetic. Browser rendering and interactions have not been qualified.
 

@@ -1,6 +1,6 @@
 # Validation record
 
-Public repository baseline. The package is a skill and design specification with an interactive launcher.
+Public repository baseline. The package is a skill and design specification with an interactive launcher and a Git checkpoint helper.
 
 ## Available reproducible checks
 
@@ -12,11 +12,13 @@ python3 -m unittest discover -s tests -v
 ./bin/mathforge --check
 ```
 
-The package validator checks local links, syntax, workflow identities, executable permissions, disconnected template state and manifest integrity. Launcher behavior tests use a fake Codex executable and make no model requests. The actual CLI check queries its version, not authentication, quota or model access.
+The package validator checks local links, syntax, workflow identities, executable permissions, disconnected template state and manifest integrity. Launcher behavior tests use a fake Codex executable and make no model requests. Research checkpoint tests use temporary local bare Git remotes and no external services. The actual CLI check queries its version, not authentication, quota or model access.
 
 The TypeScript design contracts have also been checked with strict mode and no emit during preparation. That check establishes type consistency only; runtime adapters and permission enforcement are not implemented.
 
 Repository preparation passed eight launcher and artifact integrity tests, the skill frontmatter validator, strict TypeScript contract compilation and static HUD syntax checks. The repository launcher also passed a local version and file check. No model or account operation was used for these checks.
+
+The research persistence addition has 22 integration tests for scoped publication, retained unrelated work, missing or disabled configuration, secret and artifact rejection, remote identity, divergence, shared locking, push failure and exact commit retry, credentials in earlier pending history, and successful or failed interactive session completion. Three regressions verify that configured tag publication remains disabled, concurrent commits cannot bypass history inspection, and changing origin after validation cannot redirect the checkpoint. These checks establish the tested software behavior, not complete protection against every credential format or concurrent Git writer.
 
 ## Inherited design evidence
 

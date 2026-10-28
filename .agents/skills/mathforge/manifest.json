@@ -12,13 +12,13 @@
     },
     {
       "path": "README.md",
-      "sha256": "5ac9054b26e899a04468af18281d9909a0d6f44bfbc4bebbb78557c4889723a3",
-      "bytes": 1372
+      "sha256": "04b3674b111a83c6170a52987c7453741826162944b0c3232e31e63061180b2f",
+      "bytes": 1480
     },
     {
       "path": "SKILL.md",
-      "sha256": "cc00761f4236b9885af1a274f01cad8567fa8d01e8b373cc0184f43b82806971",
-      "bytes": 8807
+      "sha256": "8e11699fe034157f7d25275f4dca707528403be815d481d7bc1c631fe4a7fe85",
+      "bytes": 10217
     },
     {
       "path": "account-plan.json",
@@ -86,6 +86,11 @@
       "bytes": 7844
     },
     {
+      "path": "references/research-records.md",
+      "sha256": "3324657a1a332001ea3d156017a4afc3f1b95d2cfbf51af04665509d097d1b1e",
+      "bytes": 3267
+    },
+    {
       "path": "references/research-target.md",
       "sha256": "dc6bffafd157b0ccd424ae36159c1a7a9dc4bd5f5ac1659ef171ca259da5278a",
       "bytes": 16043
@@ -107,8 +112,8 @@
     },
     {
       "path": "references/terminal.md",
-      "sha256": "144899cffeabb05beba865bd8d9c21afe21c0c4ccbbb25d902ea0dade439b57f",
-      "bytes": 2099
+      "sha256": "35cee9d1a430a46a56514631ca0d5f2818930898201c83ce70ff70c72c644c6b",
+      "bytes": 2810
     },
     {
       "path": "references/tool-catalog.md",
@@ -121,14 +126,19 @@
       "bytes": 53128
     },
     {
+      "path": "scripts/checkpoint.py",
+      "sha256": "8d10e7b9ab7565019f897af7aa5d8595810c11b8966115101afec402e03b7119",
+      "bytes": 11641
+    },
+    {
       "path": "scripts/install.py",
       "sha256": "7b3aa664b19962afb2507a3e5f6eb394eb057b2f18788133d563dfa1bdd416a7",
       "bytes": 1524
     },
     {
       "path": "scripts/mathforge",
-      "sha256": "1250a696d12878891ad6f5be9038aaae16ee0357b1eca8f054bce8e3931a96c1",
-      "bytes": 4638
+      "sha256": "ed5d704fcae54ec0944c4f8004cb81de4fc997f53f787a4b321f95b943254b0c",
+      "bytes": 6810
     },
     {
       "path": "scripts/validate_package.py",
@@ -142,8 +152,8 @@
     },
     {
       "path": "validation.md",
-      "sha256": "af8b1d2a5d98fda3f34f1c2f8b3abff53c4942bfa71349bba963b3b445344d2f",
-      "bytes": 2545
+      "sha256": "d519680d7f8e5f92f8d9cdc2488495e84c963148a4ad33c7e64505bc0238f6c3",
+      "bytes": 3348
     },
     {
       "path": "workflow.json",
