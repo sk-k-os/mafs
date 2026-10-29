@@ -1,0 +1,60 @@
+{
+  "started_utc": "2026-10-29T16:02:55.313961+00:00",
+  "finished_utc": "2026-10-29T16:02:59.890648+00:00",
+  "elapsed_seconds_measured": 4.576641292020213,
+  "exit_code": 0,
+  "python_version": "3.14.6",
+  "input_hashes_before": {
+    "research/experiments/run-004-referee/check.py": "9077c4e975fa327d6f3c01b814c6c5622f618c1890046fbcc5c60de80b3b9e97",
+    "research/experiments/run-004-analytic/compute.py": "4372d439f42c9e16718f971bdb83e84d8110e1a25507c30999745e2d5047747a",
+    "research/experiments/run-004-analytic/output.json": "b21b3d403a18e982e870e02439ba1155ba1fec72a99576e9156df703398acfae"
+  },
+  "input_hashes_after": {
+    "research/experiments/run-004-referee/check.py": "9077c4e975fa327d6f3c01b814c6c5622f618c1890046fbcc5c60de80b3b9e97",
+    "research/experiments/run-004-analytic/compute.py": "4372d439f42c9e16718f971bdb83e84d8110e1a25507c30999745e2d5047747a",
+    "research/experiments/run-004-analytic/output.json": "b21b3d403a18e982e870e02439ba1155ba1fec72a99576e9156df703398acfae"
+  },
+  "inputs_unchanged": true,
+  "referee_output_sha256": "a24ef0856592711e3d180b49151840aeb26539571885c05c20618c1a5f306ceb",
+  "replay_script_sha256": "e57a52d8d5ae4a4d24fcacda3d253d1a8b1d33f0b88a901a6e538e8fc1293b70",
+  "all_coefficients_equal_through": 220000,
+  "direct_good_prime_count_total": 164,
+  "kernel_comparisons": [
+    {
+      "x": "1/10000",
+      "independent_rational_interval_inside_author_interval": true
+    },
+    {
+      "x": "1/10",
+      "independent_rational_interval_inside_author_interval": true
+    },
+    {
+      "x": "1",
+      "independent_rational_interval_inside_author_interval": true
+    },
+    {
+      "x": "3",
+      "independent_rational_interval_inside_author_interval": true
+    },
+    {
+      "x": "10",
+      "independent_rational_interval_inside_author_interval": true
+    },
+    {
+      "x": "30",
+      "independent_rational_interval_inside_author_interval": true
+    },
+    {
+      "x": "33",
+      "independent_rational_interval_inside_author_interval": true
+    }
+  ],
+  "independent_constant_intervals_inside_author_intervals": true,
+  "tail_bound_recomputed_as_fraction": true,
+  "author_full_output_replayed_byte_identically": true,
+  "strict_coarse_enclosure": [
+    "1561/100",
+    "1563/100"
+  ],
+  "limits": "Separate coefficient implementation and selected exact kernel calculations; entire derivative sum replays author code. Shared model family, tools and mathematical dependencies. No formal prover or external human review."
+}

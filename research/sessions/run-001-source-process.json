@@ -1,0 +1,13 @@
+{
+  "worker": "source-audit",
+  "startedAtUtc": "2026-10-28T20:54:12.965144+00:00",
+  "finishedAtUtc": "2026-10-28T20:59:43.699198+00:00",
+  "elapsedWallSeconds": 330.732,
+  "exitCode": 0,
+  "timedOut": false,
+  "transport": "codex exec",
+  "modelSelection": "unchanged configured default",
+  "sourceArtifact": "research/sources/run-001-jsw-audit.md",
+  "sourceArtifactSha256": "4561bf87427c86859a925043460a0866e389ec8afa8ad8fa3da7ef06e4f46366",
+  "assurance": "Parent observed process timing and exit; not mathematical verification."
+}

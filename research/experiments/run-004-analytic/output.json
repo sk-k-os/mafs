@@ -1,0 +1,63 @@
+{
+  "absolute_tail_upper_numerator": "12383822509707523968866705753697606541",
+  "coarse_strict_lower": "1561/100",
+  "coarse_strict_upper": "1563/100",
+  "coefficient_cutoff": 220000,
+  "coefficient_sha256": "c605aced34fcd03ed3d7a54079707f411083819140a15d6c516a8b421e2a8b73",
+  "conductor_dependency": 1853674272,
+  "curve_coefficients": [
+    0,
+    0,
+    0,
+    -57927321,
+    0
+  ],
+  "gamma_interval": {
+    "denominator": "1000000000000000000000000000000000000000000000",
+    "lower_numerator": "577215164901449527273178765082402431037691575",
+    "upper_numerator": "577216164901449527273178765082402431038693753"
+  },
+  "harmonic_terms": 1000000,
+  "interval_scale": "1000000000000000000000000000000000000000000000",
+  "kernel_terms": 200,
+  "log_terms": 55,
+  "lower_bound_positive": true,
+  "nonzero_coefficient_terms_used": 21493,
+  "partial_second_derivative": {
+    "denominator": "1000000000000000000000000000000000000000000000",
+    "lower_numerator": "15619015908673412378685999350062935857651887607",
+    "upper_numerator": "15620296577343296152603100667968970114729439822"
+  },
+  "pi_interval": {
+    "denominator": "1000000000000000000000000000000000000000000000",
+    "lower_numerator": "3141592653589793238462643383279502884197169399",
+    "upper_numerator": "3141592653589793238462643383279502884197169400"
+  },
+  "sample_coefficients": {
+    "1": 1,
+    "121": -11,
+    "13": -6,
+    "169": 23,
+    "17": -2,
+    "2": 0,
+    "25": -1,
+    "3": 0,
+    "43": 0,
+    "49": -7,
+    "5": -2,
+    "59": 0,
+    "7": 0,
+    "9": 0
+  },
+  "second_derivative_enclosure": {
+    "denominator": "1000000000000000000000000000000000000000000000",
+    "lower_numerator": "15619015896289589868978475381196230103954281066",
+    "upper_numerator": "15620296589727118662310624636835675868427046363"
+  },
+  "status": "integer interval computation; analytic and CM bridges require separate review",
+  "x_interval": {
+    "denominator": "1000000000000000000000000000000000000000000000",
+    "lower_numerator": "145936241563472810636443338262406178511845",
+    "upper_numerator": "145936241563472810636443338262406178511846"
+  }
+}

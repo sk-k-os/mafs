@@ -1,0 +1,164 @@
+{
+  "package": "mathforge",
+  "version": "3",
+  "scope": "skillAndDesignOnly",
+  "runtimeActive": false,
+  "accountsConnected": 0,
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "cc058b7ef320e13985aa6490254da5f875cb461db42a296dfc96084d1d6623a2",
+      "bytes": 1094
+    },
+    {
+      "path": "README.md",
+      "sha256": "04b3674b111a83c6170a52987c7453741826162944b0c3232e31e63061180b2f",
+      "bytes": 1480
+    },
+    {
+      "path": "SKILL.md",
+      "sha256": "8e11699fe034157f7d25275f4dca707528403be815d481d7bc1c631fe4a7fe85",
+      "bytes": 10217
+    },
+    {
+      "path": "account-plan.json",
+      "sha256": "70c579ebe3c903b884ce890d12f6a1652c6c386ab0af87bcad89d91b3add4945",
+      "bytes": 5456
+    },
+    {
+      "path": "agents/openai.yaml",
+      "sha256": "0f09349008e2210ee5ef909964e8bdf2c1d6aea4e7331e0e5f7c473b17e5ee4e",
+      "bytes": 262
+    },
+    {
+      "path": "assets/Montserrat-LICENSE.txt",
+      "sha256": "861d64229728cd65a98d119612c12769582574d1a092f0b63c8b0fd474e7065f",
+      "bytes": 4400
+    },
+    {
+      "path": "campaign-policy.json",
+      "sha256": "cd9546ef938c0f3e8ccde2ef307c0eea320e8a4ad8e0e3af8489283b29e21e5f",
+      "bytes": 1876
+    },
+    {
+      "path": "contracts.ts",
+      "sha256": "e23c0aafb086c316867681521f8a4c170b1436743a44569455a7611553c67f2a",
+      "bytes": 10418
+    },
+    {
+      "path": "design-decisions.json",
+      "sha256": "c566b4f8328c78ec62d7000a3ad7f01638a027595005663b000a7155178290d6",
+      "bytes": 672
+    },
+    {
+      "path": "evals/acceptanceCases.json",
+      "sha256": "851d70ade3fd71c28dcca8526157a175450143be47aa9dc585a96f941847adb4",
+      "bytes": 17028
+    },
+    {
+      "path": "hud-spec.md",
+      "sha256": "edeb799afca6dd6eef708a9272e9916e42651a6c61e56103a481e4246d691cdd",
+      "bytes": 15228
+    },
+    {
+      "path": "hud.html",
+      "sha256": "fbf5fb679ab37ca5f11f3f3f97c4d84e58639bab6d5aee0281e65fe3044ca8e8",
+      "bytes": 1252270
+    },
+    {
+      "path": "references/account-transport-evidence.md",
+      "sha256": "dccccfdaaf8ed4a38d57a460ef0f9a09d4d553d915f065b570071bd816540278",
+      "bytes": 21484
+    },
+    {
+      "path": "references/architecture.md",
+      "sha256": "ae4afbc3a4fa8f061b3ffe2a2a046fb58bfd70ccd844a11358aa315e9e0e2c15",
+      "bytes": 18505
+    },
+    {
+      "path": "references/build-manual.md",
+      "sha256": "5d086b70cf6a90c9f4575a0daac05c6fe700d97778a958d418b9822e5bd8e455",
+      "bytes": 11882
+    },
+    {
+      "path": "references/research-method.md",
+      "sha256": "6a78164110f44da2f178de1af8e6870899d060f7881639e3084ff28d3493ccdf",
+      "bytes": 7844
+    },
+    {
+      "path": "references/research-records.md",
+      "sha256": "3324657a1a332001ea3d156017a4afc3f1b95d2cfbf51af04665509d097d1b1e",
+      "bytes": 3267
+    },
+    {
+      "path": "references/research-target.md",
+      "sha256": "dc6bffafd157b0ccd424ae36159c1a7a9dc4bd5f5ac1659ef171ca259da5278a",
+      "bytes": 16043
+    },
+    {
+      "path": "references/six-account-architecture.md",
+      "sha256": "2e5632cab05e5fab7ecdb121dcf03ce234d13a555c599992cbeb6e1855d9c566",
+      "bytes": 15224
+    },
+    {
+      "path": "references/six-account-evaluation.md",
+      "sha256": "e8c76275aac96a7dd3e2c0819e744c457842510ba5935208f5f9c566844b406f",
+      "bytes": 29589
+    },
+    {
+      "path": "references/solution-contract.md",
+      "sha256": "4bc2668aa70bb6686b2ad3ca9f0f5dd3e765b98e27daad0519f1eac10de04efc",
+      "bytes": 11077
+    },
+    {
+      "path": "references/terminal.md",
+      "sha256": "35cee9d1a430a46a56514631ca0d5f2818930898201c83ce70ff70c72c644c6b",
+      "bytes": 2810
+    },
+    {
+      "path": "references/tool-catalog.md",
+      "sha256": "f056e2cb43cf27544e04fdeda244180c18f703a5f29d3d1653c2e0241362eb2b",
+      "bytes": 7313
+    },
+    {
+      "path": "references/verification-and-lifecycle.md",
+      "sha256": "c714aeb3c6cbbb6984f743afbf9326bdb0724f5664f4ae452877adb66bd77708",
+      "bytes": 53128
+    },
+    {
+      "path": "scripts/checkpoint.py",
+      "sha256": "8d10e7b9ab7565019f897af7aa5d8595810c11b8966115101afec402e03b7119",
+      "bytes": 11641
+    },
+    {
+      "path": "scripts/install.py",
+      "sha256": "7b3aa664b19962afb2507a3e5f6eb394eb057b2f18788133d563dfa1bdd416a7",
+      "bytes": 1524
+    },
+    {
+      "path": "scripts/mathforge",
+      "sha256": "ed5d704fcae54ec0944c4f8004cb81de4fc997f53f787a4b321f95b943254b0c",
+      "bytes": 6810
+    },
+    {
+      "path": "scripts/validate_package.py",
+      "sha256": "273216b9c6d2dca30ecb73d321fafa41516f5aaa549b9a6444cde50b46eaac80",
+      "bytes": 5234
+    },
+    {
+      "path": "solution-contract.json",
+      "sha256": "08257fd67a6f23e600545fb4f331704d3c54041cdf97c424e6e3252169fc82fb",
+      "bytes": 1874
+    },
+    {
+      "path": "validation.md",
+      "sha256": "d519680d7f8e5f92f8d9cdc2488495e84c963148a4ad33c7e64505bc0238f6c3",
+      "bytes": 3348
+    },
+    {
+      "path": "workflow.json",
+      "sha256": "bd66a931ca42300481166fc6dbe8d2c43e30abebf5c9c82f001b05c24c3b62d8",
+      "bytes": 6025
+    }
+  ]
+}

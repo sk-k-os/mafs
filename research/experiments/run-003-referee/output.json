@@ -1,0 +1,203 @@
+{
+  "python": "3.14.6",
+  "implementation": "separate_referee_standard_library_only",
+  "arithmetic": "integer_and_Fraction",
+  "random_seed": null,
+  "family_sample": {
+    "u": 2,
+    "v": 1,
+    "q": 43,
+    "r": 59,
+    "n": 7611,
+    "points": [
+      [
+        "-3483",
+        "399384"
+      ],
+      [
+        "449049/16",
+        "289636605/64"
+      ]
+    ]
+  },
+  "squareclass_matrix_rank": 4,
+  "Monsky_cases": [
+    {
+      "upper_triangle_bits": [
+        0,
+        0,
+        0
+      ],
+      "rank": 6,
+      "pure_selmer_rank": 0
+    },
+    {
+      "upper_triangle_bits": [
+        0,
+        0,
+        1
+      ],
+      "rank": 6,
+      "pure_selmer_rank": 0
+    },
+    {
+      "upper_triangle_bits": [
+        0,
+        1,
+        0
+      ],
+      "rank": 4,
+      "pure_selmer_rank": 2
+    },
+    {
+      "upper_triangle_bits": [
+        0,
+        1,
+        1
+      ],
+      "rank": 6,
+      "pure_selmer_rank": 0
+    },
+    {
+      "upper_triangle_bits": [
+        1,
+        0,
+        0
+      ],
+      "rank": 6,
+      "pure_selmer_rank": 0
+    },
+    {
+      "upper_triangle_bits": [
+        1,
+        0,
+        1
+      ],
+      "rank": 4,
+      "pure_selmer_rank": 2
+    },
+    {
+      "upper_triangle_bits": [
+        1,
+        1,
+        0
+      ],
+      "rank": 6,
+      "pure_selmer_rank": 0
+    },
+    {
+      "upper_triangle_bits": [
+        1,
+        1,
+        1
+      ],
+      "rank": 6,
+      "pure_selmer_rank": 0
+    }
+  ],
+  "sample_Monsky_matrix": [
+    [
+      0,
+      0,
+      1,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      1,
+      0,
+      0,
+      1,
+      0,
+      1
+    ],
+    [
+      0,
+      1,
+      0,
+      1,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      0,
+      1,
+      1
+    ]
+  ],
+  "sample_Monsky_rank": 4,
+  "pilot_traces": {
+    "2": -2,
+    "3": -1,
+    "7": -2
+  },
+  "pilot_c4_c6_delta": [
+    496,
+    20008,
+    -161051
+  ],
+  "mod3_and_mod7_irreducibility_witnesses": true,
+  "ordinary_at3_and7": true,
+  "twist13_traces_scale2_model": {
+    "3": -1,
+    "7": 2
+  },
+  "twist13_v13_discriminant_c4": [
+    6,
+    2
+  ],
+  "local_filter_at5": [
+    {
+      "d": 1,
+      "delta_mod5": 4,
+      "chi_at5": 1,
+      "local_filter": false
+    },
+    {
+      "d": 2,
+      "delta_mod5": 1,
+      "chi_at5": -1,
+      "local_filter": true
+    },
+    {
+      "d": 5,
+      "delta_mod5": 0,
+      "chi_at5": 0,
+      "local_filter": false
+    },
+    {
+      "d": 13,
+      "delta_mod5": 1,
+      "chi_at5": -1,
+      "local_filter": true
+    }
+  ],
+  "input_sha256": {
+    "research/sources/run-003-route-a.md": "868a60d0288f33a1992931a1a10eb9b3b53a3781d0132e81ee1501b1d50f5628",
+    "research/sources/run-003-route-b.md": "abfd0d36f6b3a60195d658ead3a80aaeb741163516c65c0a2c2a16f222da0ba4",
+    "research/sources/run-003-exploration.md": "f12fbf4a8b648ff2edb756eeb33aacc48da1b4da820f61e2cfb62d5328ca4225"
+  },
+  "finite_checks_passed": true,
+  "analytic_rank_computed": false,
+  "formal_verification": false
+}

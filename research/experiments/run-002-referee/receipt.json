@@ -1,0 +1,39 @@
+{
+  "command": [
+    "python3",
+    "research/experiments/run-002-referee/check.py",
+    "research/findings/run-002-analytic-certificate.md",
+    "research/sources/run-002-analytic-sources.md",
+    "research/sources/run-002-root-number.md",
+    "research/sources/run-001-jsw-audit.md",
+    "research/findings/run-001-representation-obstruction.md",
+    "research/experiments/run-002-analytic/compute.py",
+    "research/experiments/run-002-analytic/output.json",
+    "research/experiments/run-002-analytic/receipt.json",
+    "research/experiments/run-002-referee/check.py"
+  ],
+  "started_utc": "2026-10-28T21:21:50.038987+00:00",
+  "finished_utc": "2026-10-28T21:21:50.092288+00:00",
+  "elapsed_seconds_measured": 0.05319620796944946,
+  "exit_code": 0,
+  "stderr": "",
+  "python_version": "3.14.6",
+  "source_sha256": "a631d4f18cc51b165c06940c5164a93f1ee3013b7b86935b6cab7b57a0fbea44",
+  "output_sha256": "f49f481e0cf109e83a400ed1ee42d6406e087bc4873da4ed2bd2ffb7d6453304",
+  "reviewed_artifact_sha256": {
+    "research/findings/run-002-analytic-certificate.md": "a30416e889e9f267e3dc673914720953ea12600e265f132e05eb690dc6ae7ea8",
+    "research/sources/run-002-analytic-sources.md": "a4081f61449bbfac550e453cb66ae52b2d865905414bf2541888a5bf0138d36b",
+    "research/sources/run-002-root-number.md": "0d485e06df9f50c8e9f946ee985b52ac4fc1059d515e60cc47e0e9ecf59f0ee6",
+    "research/sources/run-001-jsw-audit.md": "4561bf87427c86859a925043460a0866e389ec8afa8ad8fa3da7ef06e4f46366",
+    "research/findings/run-001-representation-obstruction.md": "cfef65411425b63a59c51a782090241fa8e7a8f1c3b6688fcd75cbfcbfd86f3b",
+    "research/experiments/run-002-analytic/compute.py": "37175eb7d136208fcdbdbb896e0943186753c23a814180cc3d1aa7dfe0ed6e02",
+    "research/experiments/run-002-analytic/output.json": "45f05ce03029688cd4d04db73cf19947b307d285ca92d68db9b5025a25fb7d3f",
+    "research/experiments/run-002-analytic/receipt.json": "efd25086ca425fd97310989b4d3e50b9565bf3d3a76018672131a174960a903e",
+    "research/experiments/run-002-referee/check.py": "a631d4f18cc51b165c06940c5164a93f1ee3013b7b86935b6cab7b57a0fbea44"
+  },
+  "reviewed_inputs_unchanged_during_execution": true,
+  "author_recipe_replay_exit_code": 0,
+  "author_recipe_output_matches_recorded_bytes": true,
+  "independence": "Separate model referee with independently written arithmetic implementation; shared model family, host, libraries, mathematical sources and filesystem. Author recipe inspected only after initial independent implementation.",
+  "trust_limit": "Finite exact arithmetic plus separately documented prose review; no formal checker, trusted acceptance service or external human referee."
+}

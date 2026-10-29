@@ -1,0 +1,62 @@
+{
+  "id": "mathforgeResearch",
+  "version": "1",
+  "status": "designOnly",
+  "executable": false,
+  "predicateBinding": "Named conditions below require trusted runtime implementations and direct branch tests before execution.",
+  "entry": "scope",
+  "nodes": [
+    {"id":"scope","owner":"coordinator","output":"frozenTargetAndAssignment","ready":"human scope and finite task recorded","failure":"hold"},
+    {"id":"literature","owner":"foundations","output":"theoremApplicabilityLedger","ready":"scope accepted","failure":"hold"},
+    {"id":"gapAudit","owner":"formalizer","output":"formalizationFeasibility","ready":"scope accepted","failure":"hold"},
+    {"id":"plan","owner":"coordinator","output":"boundedBranchAssignments","ready":"accepted literature and gap audit joined","failure":"hold"},
+    {"id":"discover","owner":"discoveryCell","output":"candidateClaim","ready":"assignment accepted and resources reserved","failure":"recordNegative"},
+    {"id":"experiment","owner":"experimentalist","output":"computationReceipt","ready":"candidate test has valid inputs and sandbox binding","failure":"hold"},
+    {"id":"referee","owner":"independentReferee","output":"reviewReceipt","ready":"exact candidate and source artifacts available; required experiment receipt accepted at the same input revision or experiment explicitly notApplicable","failure":"recordNegative"},
+    {"id":"formalize","owner":"formalizer","output":"candidateProof","ready":"stable statement and applicable library available","failure":"hold"},
+    {"id":"verify","owner":"trustedVerifier","output":"verificationReceipt","ready":"proof source pinned and immutable target available","failure":"recordNegative"},
+    {"id":"commit","owner":"evidenceSteward","output":"acceptedOrQualifiedLedgerRevision","ready":"all required claim class checks accepted and no unresolved material objection","failure":"hold"},
+    {"id":"recordNegative","owner":"evidenceSteward","output":"objectionOrRefutation","ready":"specific failed obligation and evidence available","failure":"hold"},
+    {"id":"evaluate","owner":"lifecycleController","output":"calibrationAndLifecycleDecision","ready":"immutable outcome finalized","failure":"hold"},
+    {"id":"humanReview","owner":"mathematicalDirector","output":"directionDecision","ready":"bounded review packet ready","failure":"hold"},
+    {"id":"hold","owner":"coordinator","output":"explicitUnresolvedObligation","ready":"missing or invalid dependency identified","failure":"hold"}
+  ],
+  "edges": [
+    {"from":"scope","to":"literature","when":"scopeAccepted"},
+    {"from":"scope","to":"gapAudit","when":"scopeAccepted"},
+    {"from":"literature","to":"plan","when":"scopeReportsJoinSatisfied"},
+    {"from":"gapAudit","to":"plan","when":"scopeReportsJoinSatisfied"},
+    {"from":"plan","to":"discover","when":"assignmentAcceptedAndBudgetReserved"},
+    {"from":"discover","to":"experiment","when":"candidateReadyAndExperimentRequired"},
+    {"from":"discover","to":"referee","when":"candidateReadyAndExperimentNotApplicable"},
+    {"from":"experiment","to":"referee","when":"requiredExperimentReceiptAcceptedAtCurrentInputRevision"},
+    {"from":"referee","to":"formalize","when":"reviewAcceptedAndFormalVerificationRequired"},
+    {"from":"referee","to":"commit","when":"reviewAcceptedAndFormalVerificationNotRequiredAndOtherRequiredChecksPass"},
+    {"from":"referee","to":"recordNegative","when":"reviewRejectedWithSpecificDefect"},
+    {"from":"referee","to":"hold","when":"reviewInconclusiveOrDisputed"},
+    {"from":"formalize","to":"verify","when":"completeCandidateProofAtFrozenTargetRevision"},
+    {"from":"verify","to":"commit","when":"trustedVerificationAcceptedAndAllOtherRequiredChecksPass"},
+    {"from":"verify","to":"recordNegative","when":"trustedVerificationRejectedWithSpecificDefect"},
+    {"from":"verify","to":"hold","when":"trustedVerificationUnavailableOrInconclusive"},
+    {"from":"commit","to":"evaluate","when":"outcomeDurablyFinalized"},
+    {"from":"recordNegative","to":"evaluate","when":"outcomeDurablyFinalized"},
+    {"from":"evaluate","to":"humanReview","when":"reviewCheckpointRequired"}
+  ],
+  "joins": [
+    {"id":"scopeReportsJoinSatisfied","at":"plan","required":["literature","gapAudit"],"revisionRule":"both consume the identical frozen target revision","onMissing":"hold","singleActivationPerAssignmentRevision":true},
+    {"id":"candidateReviewJoin","at":"referee","required":["discover"],"conditionalRequired":{"experiment":"assignment.experimentRequired"},"revisionRule":"all applicable receipts consume the same candidate and source hashes","onMissing":"hold","singleActivationPerAssignmentRevision":true},
+    {"id":"promotionJoin","at":"commit","required":["referee"],"conditionalRequired":{"verify":"assignment.formalVerificationRequired"},"revisionRule":"every required receipt covers exact submitted claim revision; no unresolved material objection","onMissing":"hold","singleActivationPerAssignmentRevision":true}
+  ],
+  "outcomeRouting": {
+    "referee": ["acceptedNeedsFormalVerification","acceptedAtInformalAssurance","rejected","inconclusive"],
+    "verify": ["acceptedUnderRecordedTrust","rejected","inconclusive"],
+    "rule": "one outcome only per finalized attempt; a rejected proof does not imply the theorem is false"
+  },
+  "branchRules": {
+    "experiment": "requirement frozen in assignment before discovery; if not required emit skipped with notApplicable receipt; missing binding when required routes hold",
+    "formalize": "requirement frozen in assignment; if required but unavailable route hold; lowering assurance requires a new reviewed assignment revision",
+    "commit": "the referee shortcut cannot confer formal verification; required checks are fixed before execution",
+    "hold": "no automatic unbounded retry; resume by valid input revision or human decision within original budget"
+  },
+  "loopPolicy": {"automaticRepairAttemptsPerAssignment":2,"newResearchCycleRequiresNewAssignment":true,"allAttemptsShareParentBudget":true}
+}

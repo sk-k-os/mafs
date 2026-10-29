@@ -1,0 +1,20 @@
+{
+  "command": [
+    "python3",
+    "research/experiments/run-002-analytic/compute.py"
+  ],
+  "elapsed_seconds_measured": 0.02155825000954792,
+  "exit_code": 0,
+  "external_packages": [],
+  "finished_utc": "2026-10-28T21:17:35.251161+00:00",
+  "implementation": "CPython",
+  "output_sha256": "45f05ce03029688cd4d04db73cf19947b307d285ca92d68db9b5025a25fb7d3f",
+  "python_version": "3.14.6",
+  "random_seed": null,
+  "receipt_author": "run 002 computation specialist",
+  "source_sha256": "37175eb7d136208fcdbdbb896e0943186753c23a814180cc3d1aa7dfe0ed6e02",
+  "started_utc": "2026-10-28T21:17:35.229338+00:00",
+  "stderr": "",
+  "trust_limit": "Python standard library arithmetic and execution; not a formal proof checker",
+  "verification_status": "author execution only; separate mathematical review pending"
+}

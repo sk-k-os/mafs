@@ -1,0 +1,118 @@
+#!/usr/bin/env python3
+"""Interactive launcher only. It does not start a background research service."""
+from __future__ import annotations
+
+import argparse
+import json
+import os
+from pathlib import Path
+import shutil
+import subprocess
+import sys
+
+
+def cli_path() -> str | None:
+    selected = os.environ.get("MATHFORGE_CODEX")
+    if selected is not None:
+        resolved = shutil.which(selected)
+        return resolved if resolved and os.access(resolved, os.X_OK) else None
+    return shutil.which("codex")
+
+
+def main() -> int:
+    package = Path(__file__).resolve().parent.parent
+    repository = package.parent.parent.parent
+    default_workspace = repository if (repository / "research-sync.json").is_file() else Path.cwd()
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("-C", "--directory", default=str(default_workspace), help="Existing research workspace")
+    parser.add_argument("--check", action="store_true", help="Inspect local files and CLI without model calls")
+    parser.add_argument("--print-launch", action="store_true", help="Print launch arguments without running Codex")
+    parser.add_argument("mode", nargs="?", default="design", choices=["design", "research", "review", "resume", "hud", "checkpoint"])
+    parser.add_argument("task", nargs="*", help="One quoted task or ordinary words; never evaluated as shell code")
+    args = parser.parse_args()
+    workspace = Path(args.directory).expanduser().resolve()
+    skill = package / "SKILL.md"
+    if not workspace.is_dir():
+        parser.error("Research workspace does not exist: " + str(workspace))
+    required = [skill, package / "references/architecture.md", package / "references/verification-and-lifecycle.md"]
+    missing = [str(path) for path in required if not path.is_file()]
+    if missing:
+        parser.error("Incomplete Mathforge package: " + ", ".join(missing))
+    checkpoint_script = package / "scripts/checkpoint.py"
+    if args.mode == "checkpoint" and not args.check:
+        command = [sys.executable, str(checkpoint_script), "-C", str(workspace), " ".join(args.task) or "Save research checkpoint"]
+        if args.print_launch:
+            print(json.dumps(command, indent=2))
+            return 0
+        return subprocess.run(command, check=False).returncode
+    codex = cli_path()
+    if args.check:
+        report: dict[str, object] = {
+            "package": str(package), "skill": str(skill), "workspace": str(workspace),
+            "codex": codex, "mathematicsExecutables": {name: shutil.which(name) for name in ["lean", "lake", "sage", "gp"]},
+            "launcher": "interactiveOnly", "persistentRuntime": "notProvided", "hud": "syntheticDesignPreview",
+            "researchSyncConfigurationPresent": (workspace / "research-sync.json").is_file(),
+        }
+        if codex:
+            try:
+                result = subprocess.run([codex, "--version"], capture_output=True, text=True, timeout=15, check=False)
+                report["codexVersion"] = result.stdout.strip()
+                report["codexVersionExitCode"] = result.returncode
+            except (OSError, subprocess.TimeoutExpired) as error:
+                report["cliCheckError"] = str(error)
+                print(json.dumps(report, indent=2))
+                return 1
+        print(json.dumps(report, indent=2))
+        return 0 if codex and report.get("codexVersionExitCode") == 0 else 1
+    if args.mode == "hud":
+        preview = package / "hud.html"
+        if not preview.is_file():
+            parser.error("HUD preview is missing")
+        print(str(preview))
+        print("Open this file manually. It contains synthetic design data and no active research.")
+        return 0
+    if codex is None:
+        parser.error("Codex executable unavailable. Check PATH or MATHFORGE_CODEX.")
+    task = " ".join(args.task).strip()
+    defaults = {
+        "design": "Inspect the Mathforge design and prepare the next concrete architecture decision.",
+        "research": "Inspect the current campaign and perform one ready bounded research assignment. If none exists, prepare a literature and theorem applicability audit for the proposed BSD pilot.",
+        "review": "Inspect the current campaign for a specific submitted claim. If no claim is available, identify the exact input needed; do not invent a proof to review.",
+        "resume": "Validate the latest durable campaign checkpoint and continue only an authorized bounded assignment. If none exists, report that and prepare a bounded plan.",
+    }
+    prompt = (
+        "Use $mathforge. Read the skill at " + str(skill) + ". "
+        "Mode: " + args.mode + ". Request: " + (task or defaults[args.mode]) + "\n"
+        "This launcher opens one interactive session. It does not authorize unattended work, "
+        "unbounded spending, external messages, or manuscript submission. Preserve the user's model and "
+        "permission settings. Follow existing campaign decisions, explicit proof assumptions, "
+        "and independent verification. Do not imply the supplied runtime design is deployed."
+    )
+    if (workspace / "research-sync.json").is_file():
+        prompt += (
+            "\nThis workspace publishes research records through its configured checkpoint policy. "
+            "Read research/README.md and research/STATE.md first. Preserve findings, sources, failed routes, "
+            "objections and handoff context under research/. Update STATE.md and run ./bin/mathforge "
+            "checkpoint with a concise message after meaningful milestones and before ending or replacing "
+            "an agent. Confirm the returned synced status. Keep credentials, private account data and raw "
+            "session logs outside these records. Git publication does not certify mathematical correctness."
+        )
+    command = [codex, "-C", str(workspace), prompt]
+    if args.print_launch:
+        print(json.dumps(command, indent=2))
+        return 0
+    try:
+        result = subprocess.run(command, check=False)
+    except KeyboardInterrupt:
+        print("Session interrupted. Saved files remain local; run mathforge checkpoint to publish a checkpoint.", file=sys.stderr)
+        return 130
+    if result.returncode == 0 and args.mode in {"research", "review", "resume"} and (workspace / "research-sync.json").is_file():
+        return subprocess.run([sys.executable, str(checkpoint_script), "-C", str(workspace),
+                               "Checkpoint after Mathforge " + args.mode + " session"], check=False).returncode
+    if result.returncode and (workspace / "research-sync.json").is_file():
+        print("Session did not finish successfully. Research sync was not attempted; saved files remain local.", file=sys.stderr)
+    return result.returncode
+
+
+if __name__ == "__main__":
+    sys.exit(main())

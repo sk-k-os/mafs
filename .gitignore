@@ -18,6 +18,8 @@ auth.json
 *.sqlite-shm
 /accounts/
 /.local/
-/research/
+/research/private/
+/research/raw/
+/research/cache/
 /outputs/
 /work/

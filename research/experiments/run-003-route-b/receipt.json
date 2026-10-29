@@ -1,0 +1,17 @@
+{
+  "analytic_rank_certification": "not attempted",
+  "author_execution_only": true,
+  "command": [
+    "python3",
+    "research/experiments/run-003-route-b/compute.py"
+  ],
+  "elapsed_seconds_measured": 0.019833041995298117,
+  "exit_code": 0,
+  "finished_utc": "2026-10-29T14:28:59.476855+00:00",
+  "formal_verification": "not attempted",
+  "output_sha256": "52546c74632e23790d075e56555c1158837f92d679c1c7f1be783fc11cc6b999",
+  "python_version": "3.14.6",
+  "source_sha256": "12833d08ee31ac200c0880bfb66c90edf731c35045137510823c55714470691e",
+  "started_utc": "2026-10-29T14:28:59.456708+00:00",
+  "stderr": ""
+}
