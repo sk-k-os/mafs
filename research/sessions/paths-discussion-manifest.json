@@ -1,0 +1,34 @@
+{
+  "recordId": "paths-discussion-2026-10-29",
+  "status": "exploratory discussion complete; no substantive Run005 selected",
+  "baselineCommit": "1c957cc4976fdbf04b6d72009b46f33c13d86df2",
+  "startedUtc": "2026-10-29T18:07:55+00:00",
+  "closeoutInventoryUtc": "2026-10-29T18:20:09.537602+00:00",
+  "elapsedToInventorySeconds": 734.537602,
+  "maximumAgents": 4,
+  "specialists": 3,
+  "separateSkepticalReview": true,
+  "modelLineage": "unchanged inherited host settings; shared sources, tools and model family",
+  "formalVerification": false,
+  "externalHumanReview": false,
+  "newShaCertificate": false,
+  "bsdSolved": false,
+  "openQuestions": [
+    "Q004.2",
+    "QDISC.1"
+  ],
+  "aggregateModelTokens": null,
+  "monetaryCost": null,
+  "activeModelComputeSeconds": null,
+  "artifacts": {
+    "research/sources/brainstorm-paths-cm.md": "9269c128fe79d5474653faec556ae68c9229e7c018b990c288ff83fa4f3e947d",
+    "research/sources/brainstorm-paths-broad.md": "97efb4ad86f2a3f40c347ed2dba18679ed859a376a0e87e94bccbe3eb683e00c",
+    "research/reviews/brainstorm-paths-referee.md": "e7d5ec166036f53d2391ab07b69ce6237b7e5142fbb2546a890325222a6e7a2d",
+    "research/findings/brainstorm-paths-synthesis.md": "3cbfafa761dcd57435228c35e225833790116bb67d411bf5ac4b5c9deee176a3",
+    "research/sessions/2026-10-29-paths-discussion.md": "a512b7d712d659a8f862b53369b650478c21668e8c3da8ce07fe9436458d2cb3",
+    "research/sessions/run-004-director-packet.md": "961e35125cedfd8d12e3430b078e42a24977defe2745ac9aeb2d4a92501833e8",
+    "research/STATE.md": "396736533824b3413fe6d31fab6892a50f9e5af000909aa01e8536f567ed2013"
+  },
+  "publicationReceipt": "helper JSON and independent remote verification after this inventory",
+  "authority": "coordinator inventory, not mathematical acceptance"
+}

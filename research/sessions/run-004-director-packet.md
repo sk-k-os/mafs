@@ -35,3 +35,9 @@ There is no unresolved mathematical blocker to reporting the scoped analytic res
 The [desktop brainstorm](2026-10-29-desktop-brainstorm.md) proposes an applicability audit of Coates, Liang and Sujatha arXiv:1005.4206v2, explicit separation of a single prime certificate from control at all primes, and use of another family member only to test a specified mechanism. Its source screening and objections are preserved; it is not a completed applicability audit or new theorem. The coordinator reviewed the context and appended an additional hypothesis mismatch for the Kim lead.
 
 Q004.2 remains **open** with the same exact decision and recommendation above. Sean's request for collaborative discussion does not select either branch or authorize Run 005. On selection, share these candidate ideas, source limits and objections with every assigned worker and the separate referee before substantive work. The completed Run 004 scientific checkpoint remains e73775860c56f42ee626fcca66d0af19c69a9c25; this later appendix changes discussion metadata only.
+
+## Collaborative path discussion
+
+Sean subsequently authorized a bounded discussion with specialist agents about possible paths to the solution. The [discussion record](2026-10-29-paths-discussion.md) preserves this authorization and the optional preference question QDISC.1. The [reviewed exploratory synthesis](../findings/brainstorm-paths-synthesis.md) offers a more concrete CM trace feasibility test and a distinct generalized Kato nonvanishing detector question, with the missing all prime and integral coefficient bridges explicit. No new theorem, primary certificate or executable full BSD proof is claimed.
+
+Q004.2 remains open. QDISC.1 also remains open: should the discussion emphasize a concrete advance on E_7611 or a mechanism that could generalize? That preference question is not authorization for another run. No substantive Run 005 branch is selected by the exploratory exchange or its checkpoint.
