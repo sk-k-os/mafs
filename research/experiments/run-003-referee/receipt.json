@@ -1,0 +1,54 @@
+{
+  "command": [
+    "python3",
+    "research/experiments/run-003-referee/check.py",
+    "research/sources/run-003-route-a.md",
+    "research/sources/run-003-route-b.md",
+    "research/sources/run-003-exploration.md"
+  ],
+  "started_utc": "2026-10-29T14:38:22.570062+00:00",
+  "finished_utc": "2026-10-29T14:38:22.596472+00:00",
+  "elapsed_seconds_measured": 0.026348084036726505,
+  "exit_code": 0,
+  "stderr": "",
+  "python_version": "3.14.6",
+  "source_sha256": "98c027770a20c1bc3c3ac248ec23ef6a80b7d9ac157d13da39b0ec45ae12a797",
+  "output_sha256": "411e4361a8b7baf3c1d61218ff60c01e81218605833e7dbe4868c6877b5614f9",
+  "input_hashes_before": {
+    "research/sources/run-003-route-a.md": "868a60d0288f33a1992931a1a10eb9b3b53a3781d0132e81ee1501b1d50f5628",
+    "research/sources/run-003-route-b.md": "abfd0d36f6b3a60195d658ead3a80aaeb741163516c65c0a2c2a16f222da0ba4",
+    "research/sources/run-003-exploration.md": "f12fbf4a8b648ff2edb756eeb33aacc48da1b4da820f61e2cfb62d5328ca4225"
+  },
+  "input_hashes_after": {
+    "research/sources/run-003-route-a.md": "868a60d0288f33a1992931a1a10eb9b3b53a3781d0132e81ee1501b1d50f5628",
+    "research/sources/run-003-route-b.md": "abfd0d36f6b3a60195d658ead3a80aaeb741163516c65c0a2c2a16f222da0ba4",
+    "research/sources/run-003-exploration.md": "f12fbf4a8b648ff2edb756eeb33aacc48da1b4da820f61e2cfb62d5328ca4225"
+  },
+  "inputs_unchanged": true,
+  "author_program_replays": [
+    {
+      "route": "route-a",
+      "source_sha256": "e336dc7d3d948ac535c10ab3f0ccbc7848ed9a475ef97f89f1dac9022257e63e",
+      "recorded_output_sha256": "7f47b2f6205e2e0dbae173acc1083402fe004a19cb50b00e20d9167848d66d7b",
+      "exit_code": 0,
+      "json_equal_to_recorded_output": true
+    },
+    {
+      "route": "route-b",
+      "source_sha256": "12833d08ee31ac200c0880bfb66c90edf731c35045137510823c55714470691e",
+      "recorded_output_sha256": "52546c74632e23790d075e56555c1158837f92d679c1c7f1be783fc11cc6b999",
+      "exit_code": 0,
+      "json_equal_to_recorded_output": true
+    },
+    {
+      "route": "exploration",
+      "source_sha256": "b04109418bf527fb024df2374929d15e76b52fd561ff26231c199a108f9ba6dd",
+      "recorded_output_sha256": "be12487392d16df0b1cfcd3a187a524a0e4a362771441f4f943b8d7e0b8d84a3",
+      "exit_code": 0,
+      "json_equal_to_recorded_output": true
+    }
+  ],
+  "authority": "separate referee implementation and independent executions; shared model family and tools",
+  "formal_verification": false,
+  "analytic_rank_computed": false
+}

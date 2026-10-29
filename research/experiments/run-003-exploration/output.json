@@ -1,0 +1,30 @@
+{
+  "rows": [
+    {
+      "d": 1,
+      "short_model_delta_mod5": 4,
+      "legendre_d_at5": 1,
+      "CGS_local_filter_passes": false
+    },
+    {
+      "d": 2,
+      "short_model_delta_mod5": 1,
+      "legendre_d_at5": -1,
+      "CGS_local_filter_passes": true
+    },
+    {
+      "d": 5,
+      "short_model_delta_mod5": 0,
+      "legendre_d_at5": 0,
+      "CGS_local_filter_passes": false
+    },
+    {
+      "d": 13,
+      "short_model_delta_mod5": 1,
+      "legendre_d_at5": -1,
+      "CGS_local_filter_passes": true
+    }
+  ],
+  "analytic_rank_computed": false,
+  "meaning": "Finite local filter only; not a BSD certificate"
+}

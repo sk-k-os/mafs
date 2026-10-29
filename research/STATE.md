@@ -1,6 +1,6 @@
 # Current research state
 
-Updated October 28, 2026. Latest completed research: [exact analytic rank of the control](sessions/2026-10-28-run-002.md). Previous session: [first live calibration run](sessions/2026-10-28-run-001.md). Prior infrastructure work: [research persistence setup](sessions/2026-10-28-git-checkpoints.md). Initial context: [bootstrap session](sessions/2026-10-28-bootstrap.md).
+Updated October 29, 2026. Active supervised comparison: [run 003](sessions/2026-10-29-run-003.md), with a hard ceiling of 14:50:21 UTC. Latest completed research: [exact analytic rank of the control](sessions/2026-10-28-run-002.md). Previous session: [first live calibration run](sessions/2026-10-28-run-001.md). Prior infrastructure work: [research persistence setup](sessions/2026-10-28-git-checkpoints.md). Initial context: [bootstrap session](sessions/2026-10-28-bootstrap.md). The [director guide](director-guide.md) describes the current interactive workflow.
 
 **Target:** full Birch and Swinnerton Dyer over the rational numbers. Track universal rank equality, finiteness of the Tate Shafarevich group and the leading coefficient formula as separate obligations. See the [exact solution contract](../.agents/skills/mathforge/references/solution-contract.md).
 

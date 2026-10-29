@@ -1,0 +1,16 @@
+{
+  "command": [
+    "python3",
+    "research/experiments/run-003-exploration/check.py"
+  ],
+  "startedUtc": "2026-10-29T14:27:56.166319+00:00",
+  "finishedUtc": "2026-10-29T14:27:56.184762+00:00",
+  "elapsedSeconds": 0.018198749981820583,
+  "exitCode": 0,
+  "pythonVersion": "3.14.6",
+  "arithmetic": "exact integers",
+  "randomness": false,
+  "sourceSha256": "b04109418bf527fb024df2374929d15e76b52fd561ff26231c199a108f9ba6dd",
+  "outputSha256": "be12487392d16df0b1cfcd3a187a524a0e4a362771441f4f943b8d7e0b8d84a3",
+  "authority": "coordinator execution, separate review pending"
+}

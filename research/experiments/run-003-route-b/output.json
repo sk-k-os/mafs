@@ -1,0 +1,84 @@
+{
+  "analytic_rank": "not computed or certified",
+  "arithmetic": "integers only",
+  "base_counts": {
+    "2": {
+      "a_q": -2,
+      "points": 5
+    },
+    "3": {
+      "a_q": -1,
+      "points": 5
+    },
+    "7": {
+      "a_q": -2,
+      "points": 10
+    }
+  },
+  "base_invariants": {
+    "c4": 496,
+    "c6": 20008,
+    "delta": -161051
+  },
+  "base_model": [
+    0,
+    -1,
+    1,
+    -10,
+    -20
+  ],
+  "irreducibility_witnesses": [
+    {
+      "base_ordinary": true,
+      "discriminant_mod_p": 2,
+      "five_is_p_unit": true,
+      "frobenius_prime": 2,
+      "residual_prime": 3,
+      "roots_mod_p": [],
+      "trace": -2
+    },
+    {
+      "base_ordinary": true,
+      "discriminant_mod_p": 3,
+      "five_is_p_unit": true,
+      "frobenius_prime": 3,
+      "residual_prime": 7,
+      "roots_mod_p": [],
+      "trace": -1
+    }
+  ],
+  "split_multiplicative_11_test": {
+    "minus_c6_mod_11": 1,
+    "v11_delta": 5
+  },
+  "status": "all finite exact checks passed",
+  "trust_limit": "finite arithmetic; mathematical bridges require separate review",
+  "twist_13_valuations": {
+    "c4": 2,
+    "c6": 3,
+    "delta": 6
+  },
+  "twist_counts": {
+    "3": {
+      "a_p": -1,
+      "points": 5
+    },
+    "7": {
+      "a_p": 2,
+      "points": 6
+    }
+  },
+  "twist_d": 13,
+  "twist_integral_model": [
+    0,
+    -52,
+    0,
+    -27040,
+    -2777008
+  ],
+  "twist_invariants": {
+    "c4": 1341184,
+    "c6": 2813284864,
+    "delta": -3184076456996864
+  }
+}

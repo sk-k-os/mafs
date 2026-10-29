@@ -1,0 +1,187 @@
+{
+  "python": "3.14.6",
+  "script_sha256": "e336dc7d3d948ac535c10ab3f0ccbc7848ed9a475ef97f89f1dac9022257e63e",
+  "input": {
+    "u": 2,
+    "v": 1,
+    "q": 43,
+    "r": 59,
+    "n": 7611
+  },
+  "points": [
+    [
+      "-3483",
+      "399384"
+    ],
+    [
+      "449049/16",
+      "289636605/64"
+    ]
+  ],
+  "point_equations_verified": true,
+  "squareclass_basis": [
+    -1,
+    2,
+    3,
+    43,
+    59
+  ],
+  "squareclass_rows_T0_Tn_P1_P2": [
+    [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      1,
+      0
+    ]
+  ],
+  "squareclass_rank": 4,
+  "sample_monsky_matrix": [
+    [
+      0,
+      0,
+      1,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      1,
+      0,
+      0,
+      1,
+      0,
+      1
+    ],
+    [
+      0,
+      1,
+      0,
+      1,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      0,
+      1,
+      1
+    ]
+  ],
+  "sample_matrix_rank": 4,
+  "sample_pure_selmer_rank": 2,
+  "all_eight_reciprocity_cases": [
+    {
+      "upper_A_bits": [
+        0,
+        0,
+        0
+      ],
+      "matrix_rank": 6,
+      "pure_selmer_rank": 0
+    },
+    {
+      "upper_A_bits": [
+        0,
+        0,
+        1
+      ],
+      "matrix_rank": 6,
+      "pure_selmer_rank": 0
+    },
+    {
+      "upper_A_bits": [
+        0,
+        1,
+        0
+      ],
+      "matrix_rank": 4,
+      "pure_selmer_rank": 2
+    },
+    {
+      "upper_A_bits": [
+        0,
+        1,
+        1
+      ],
+      "matrix_rank": 6,
+      "pure_selmer_rank": 0
+    },
+    {
+      "upper_A_bits": [
+        1,
+        0,
+        0
+      ],
+      "matrix_rank": 6,
+      "pure_selmer_rank": 0
+    },
+    {
+      "upper_A_bits": [
+        1,
+        0,
+        1
+      ],
+      "matrix_rank": 4,
+      "pure_selmer_rank": 2
+    },
+    {
+      "upper_A_bits": [
+        1,
+        1,
+        0
+      ],
+      "matrix_rank": 6,
+      "pure_selmer_rank": 0
+    },
+    {
+      "upper_A_bits": [
+        1,
+        1,
+        1
+      ],
+      "matrix_rank": 6,
+      "pure_selmer_rank": 0
+    }
+  ],
+  "scope": "Exact finite arithmetic conditional on cited descent and Monsky interpretations. No analytic L function or full Sha computation."
+}
