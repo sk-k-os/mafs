@@ -14,3 +14,20 @@ Recommendation: choose A. Run 002 already completed a low rank analytic control.
 Focused decision: **Should the next bounded run pursue A, the rank two analytic obstruction for E_7611, or B, the alternative prime application for E_5?**
 
 Use the [director guide](../director-guide.md) to give an objective, finite time limit and desired evidence; contribute ideas as hypotheses with a bridge and falsifier; ask for a fresh skeptical review when challenging a claim. A message of “save” invokes `./bin/mathforge checkpoint 'Save research progress and next steps'`. The current capability is this supervised interactive team. Separate accounts, durable scheduling, live HUD and formal acceptance are not deployed. Existing account, model and permission settings remain intact.
+
+## Director question register
+
+Administrative amendment dated October 29, 2026 after Run 003 closed. The scientific comparison, recommendation and reviewed theorem statements above are unchanged. No assignment has started or been extended.
+
+| ID | Status | Exact decision needed | Answer or next action |
+| :--- | :--- | :--- | :--- |
+| Q003.1 | Open | Choose the next bounded assignment: A, a rigorous second derivative test for E_7611, or B, a low analytic rank certification for B^(5) and conditional theorem applications at 3 and 7. | No director choice has been received. Recommendation remains A. Await Sean's decision; do not launch either branch automatically. |
+| Q003.2 | Answered | Should every question, decision request, required action and material blocker intended for Sean be relayed and kept in a concise packet with explicit status? | Sean explicitly requires this. The standing rule is recorded in the director guide; it authorizes no new research or extension of Run 003. |
+
+## Blocker and action relay
+
+The only scientific action currently requested from Sean is Q003.1. Run 003 publication is complete at `dca0fef55846a52477320a3ba7ec97d4140763ab`; the earlier checkpoint permission delay is resolved. No new urgent task blocker is visible to this coordinator.
+
+Sean reports that the desktop is investigating hook failures. Exact hook event name: unknown to this coordinator. Exact hook error: not visible in the available context. No additional action is requested from Sean by this record. The previous final statement that no hook failure occurred is superseded by the narrower visibility statement in the director guide. The desktop investigation is not evidence that a particular hook event was seen here, and absence here is not evidence that Sean saw no errors. Preserve hooks and permissions; record exact visible events without private payloads if they recur.
+
+The original run manifest and referee hashes identify the reviewed packet before this administrative appendix, at the completed Run 003 checkpoint. This appendix changes communication metadata only and makes no new mathematical claim.

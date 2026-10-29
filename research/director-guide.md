@@ -45,3 +45,17 @@ Only one coordinator owns Git writes. It runs `./bin/mathforge checkpoint 'Resea
 The selected positive target covers every elliptic curve over the rational numbers: rank equality, finiteness of Sha, and the full leading coefficient formula. A result for one curve, a restricted family or one prime retains that limited scope.
 
 The [solution contract](../.agents/skills/mathforge/references/solution-contract.md) requires an exact proof bundle, closed dependencies, resolved objections, reproducible computational ingredients and independent qualified human mathematical review before final acceptance. Formal coverage is reported separately. The director chooses research priorities; agent agreement or a direction decision cannot certify a proof.
+
+## Standing director relay rule
+
+Added October 29, 2026 after Run 003 closed, at Sean's explicit instruction. This is an administrative communication update, not a new assignment or an extension of Run 003.
+
+Relay every question, decision request, required action and material blocker intended for Sean. Keep a concise director packet under `research/` with a stable identifier for each question, its open or answered status, the exact decision needed, and the recorded answer when supplied. Distinguish recommendations from Sean's decisions. Preserve previous questions and answers rather than silently replacing them. The coordinator surfaces urgent blockers promptly in terminal commentary and includes outstanding director items in the final handoff. Do not assume that a record update alone means Sean has seen it.
+
+Sean reports that the desktop chat has a five minute director relay reading this session and these research records. This is operator supplied context, not a locally verified delivery service or permission for the team to create another scheduler or send external correspondence. The terminal and concise packet remain the team's relay surfaces.
+
+All workers share the same scientific objective. They must promptly share useful sources, findings, objections, failed approaches and corrections, including evidence that changes another worker's assumptions. A separate skeptical referee remains essential. Give that referee exact claims and evidence before other reviewers' conclusions; record shared sources and model lineage. Agreement is not proof.
+
+The desktop is investigating reported hook failures. Do not disable hooks, alter permissions or infer that no hook error occurred merely because none appears in the model context. If an actual hook error becomes visible, record its event name, exact error text and effect on the task, omitting private payloads. If the event name or error is unavailable, mark it unknown rather than inventing it. Clearly distinguish a hook failure from a CLI environment warning or a sandbox denial.
+
+Visibility correction: the Run 003 final reply said, “No hook failure occurred.” That was too broad. No hook error was visible in the coordinator's available tool results or model context. This does not establish whether Sean saw hook errors elsewhere. No exact hook event or error payload is available to this coordinator as of this amendment.
