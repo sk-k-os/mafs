@@ -1,0 +1,19 @@
+{
+  "arithmetic": "integers and Fraction only; elapsed time is not proof arithmetic",
+  "command": [
+    "python3",
+    "research/experiments/run-004-analytic/compute.py"
+  ],
+  "elapsed_seconds_measured": 4.283782624988817,
+  "exit_code": 0,
+  "external_packages": [],
+  "finished_utc": "2026-10-29T16:01:01.219734+00:00",
+  "formal_verification": "not attempted",
+  "output_sha256": "b21b3d403a18e982e870e02439ba1155ba1fec72a99576e9156df703398acfae",
+  "python_version": "3.14.6",
+  "randomness": "none",
+  "source_sha256": "4372d439f42c9e16718f971bdb83e84d8110e1a25507c30999745e2d5047747a",
+  "started_utc": "2026-10-29T16:00:56.935401+00:00",
+  "status": "author execution; independent review pending",
+  "stderr": ""
+}

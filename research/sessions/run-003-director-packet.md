@@ -21,7 +21,7 @@ Administrative amendment dated October 29, 2026 after Run 003 closed. The scient
 
 | ID | Status | Exact decision needed | Answer or next action |
 | :--- | :--- | :--- | :--- |
-| Q003.1 | Open | Choose the next bounded assignment: A, a rigorous second derivative test for E_7611, or B, a low analytic rank certification for B^(5) and conditional theorem applications at 3 and 7. | No director choice has been received. Recommendation remains A. Await Sean's decision; do not launch either branch automatically. |
+| Q003.1 | Answered | Choose the next bounded assignment: A, a rigorous second derivative test for E_7611, or B, a low analytic rank certification for B^(5) and conditional theorem applications at 3 and 7. | Sean answered: “Rank two analytic step (recommended)”. See the dated exact response and separate interpretation below. |
 | Q003.2 | Answered | Should every question, decision request, required action and material blocker intended for Sean be relayed and kept in a concise packet with explicit status? | Sean explicitly requires this. The standing rule is recorded in the director guide; it authorizes no new research or extension of Run 003. |
 
 ## Blocker and action relay
@@ -31,3 +31,9 @@ The only scientific action currently requested from Sean is Q003.1. Run 003 publ
 Sean reports that the desktop is investigating hook failures. Exact hook event name: unknown to this coordinator. Exact hook error: not visible in the available context. No additional action is requested from Sean by this record. The previous final statement that no hook failure occurred is superseded by the narrower visibility statement in the director guide. The desktop investigation is not evidence that a particular hook event was seen here, and absence here is not evidence that Sean saw no errors. Preserve hooks and permissions; record exact visible events without private payloads if they recur.
 
 The original run manifest and referee hashes identify the reviewed packet before this administrative appendix, at the completed Run 003 checkpoint. This appendix changes communication metadata only and makes no new mathematical claim.
+
+## Director answer and new authorization
+
+Received October 29, 2026 at the start of Run 004. Exact relayed response from Sean: **“Rank two analytic step (recommended)”**.
+
+Coordinator interpretation, recorded separately: Sean selected option A, the single curve E_7611 second derivative assignment. His accompanying instruction expressly authorizes Run 004 for at most 30 minutes including separate review, reconciliation and publication, with no automatic next run. Q003.1 is answered. The earlier open status and waiting instruction describe the state before this answer. Run 003 itself remains closed.
